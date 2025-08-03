@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "name": "truff",
+  "name": "kyctrust-platform",
   "builds": [
     {
       "src": "package.json",
@@ -20,6 +20,4 @@
     {
       "source": "/(.*)",
       "headers": [
-        { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "X-Frame-Options", "value": "DENY" },
-        { "key": "X-XSS-Protection", "
+        { "key": "X-Content-Type-
