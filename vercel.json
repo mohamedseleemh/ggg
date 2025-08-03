@@ -1,5 +1,6 @@
 {
   "version": 2,
+  "name": "kyctrust-platform",
   "builds": [
     {
       "src": "package.json",
@@ -11,15 +12,15 @@
   ],
   "rewrites": [
     {
-      "source": "/api/:match*",
-      "destination": "/api/:match*"
+      "source": "/api/(.*)",
+      "destination": "/api/$1"
     },
     {
-      "source": "/admin/:match*",
+      "source": "/admin/:path*",
       "destination": "/index.html"
     },
     {
-      "source": "/:match*",
+      "source": "/:path*",
       "destination": "/index.html"
     }
   ],
